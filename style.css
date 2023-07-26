@@ -164,10 +164,5 @@ font-size: 15px;
     .posts{
         width: 100%;
     }
-    .tab-list{
-        flex-basis: 50%;
-        width: 50%;
-    }
-
 }
     
