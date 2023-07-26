@@ -128,27 +128,23 @@ font-size: 15px;
 .highlight2 a img{
     width: 120px;
     height: 100px;
+
 }
-.tabs{
-    margin-left: 250px;
-    margin-right: 60px;
-}
-.tabs a{
-    text-decoration: none;
-    margin-right: 30px;
-    font-size: 15px;
-    color: #000000;
-    font-weight: bold;
+.tab-list{
+    display: flex;
+    margin-left: 300px;
+    margin-right: 280px;
+    height: 48px;
+    justify-content: center;
 }
 .posts{
     display: flex;
-    margin-top: 40px;
     margin-left: 280px;
     margin-right: 280px;
     flex-wrap: wrap;
     gap:3px;
     width: 900px;
-    margin: 20px auto;
+    margin: 10px auto;
     justify-content: center;
 }
 .posts .post{
@@ -161,6 +157,17 @@ font-size: 15px;
 .posts .post:hover{
     opacity: 70%;
 }
-@media screen {
-    
+@media only screen and (max-width: 768px) {
+    .search-box{
+        display: none;
+    }
+    .posts{
+        width: 100%;
+    }
+    .tab-list{
+        flex-basis: 50%;
+        width: 50%;
+    }
+
 }
+    
